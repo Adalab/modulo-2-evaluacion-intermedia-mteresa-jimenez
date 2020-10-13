@@ -26,14 +26,16 @@ function handleButtonClick() {
     console.log("El número debe estar entre 1 y 100.");
   }
 
-  let countClick = 0;
+  attempts.value = `Número de intentos: ${addClick()}`;
+}
 
-  let valueAttempts = attempts.value;
-  function addClick() {
-    countClick = countClick += 1;
-    return (valueAttempts = `Número de intentos: ${countClick}`);
-    console.log(valueAttempts);
-  }
+let countClick = 0;
+
+function addClick() {
+  countClick = countClick + 1;
+
+  return countClick;
+  valueAttempts = `Número de intentos: ${countClick}`;
 }
 
 button.addEventListener("click", handleButtonClick);

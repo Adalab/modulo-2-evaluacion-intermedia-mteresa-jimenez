@@ -37,4 +37,6 @@
   width: 90%;
   height: 35px;
   border: rgb(184, 184, 184) solid 3px;
+  color: grey;
+  padding: 5px;
 }

@@ -10,21 +10,11 @@
     <h1 class="title">Adivina el número</h1>
     <form class="form" action="/raffle" method="GET">
       <label for="number">Introduce aquí tu número:</label>
-      <input type="text" id="number" class="number-box js-number" value="" />
+      <input type="number" id="number" class="number-box js-number" />
       <input type="button" value="Prueba" class="button js-button" />
-      <input
-        type="text"
-        class="box js-hint"
-        placeholder="Pista: Escribe el número y dale Prueba"
-        value=""
-      />
-      <input
-        type="text"
-        class="box js-attempts"
-        placeholder="Número de intentos: 0"
-        value=""
-      />
     </form>
+    <p class="box js-hint">Pista: Escribe el número y dale Prueba</p>
+    <p class="box js-attempts">Número de intentos: 0</p>
 
     <script text="text/javascript" src="./main.js"></script>
   </body>
